@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto CRUD</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Cadastro de Clientes </h1>
+    
+
+    <section>
+        <h2>Novo Cliente</h2>
+
+        <form id="formClient">
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" required>
+
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" required>
+
+            <button type="submit">Cadastrar Cliente</button>
+
+
+        </form>
+
+    </section>
+        <h2>Clientes Cadastrados</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                    <th>Cidade</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+
+            <tbody id="listaClientes">
+                <!-- Os clientes aprecerão aqui -->
+            </tbody>
+        </table>
+
+     </section>
+
+     <script src="script.js"></script>
+
+
+
+
+</body>
+</html>
